@@ -495,7 +495,7 @@ const Contact = () => {
             className="relative min-h-[400px] overflow-hidden rounded-sm shadow-2xl border border-coffee-tan/20 shadow-black/60"
           >
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.113263278836!2d107.0510248!3d-6.248803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698fd86119def3%3A0x969f48396dbb5757!2sDe%20Savour%20Coffee!5e0!3m2!1sid!2sid!4v1776706402876!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.113263278836!2d107.0510248!3d-6.248803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698fd86119def3%3A0x969f48396dbb5757!2sDe%20Savour%20Coffee!5e0!3m2!1sid!2sid!4v1776706402876!5m2!1sid!2sid"
               className="w-full h-full absolute inset-0 border-0 invert grayscale opacity-80"
               allowFullScreen={true} 
               loading="lazy" 
