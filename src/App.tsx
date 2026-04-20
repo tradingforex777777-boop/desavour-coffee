@@ -315,7 +315,7 @@ const Description = () => (
             <img src="https://iili.io/Brol9Xs.jpg" alt="Drip" className="w-full h-full object-cover grayscale-[20%]" referrerPolicy="no-referrer" />
           </div>
           <div className="col-span-5 aspect-[4/6] rounded-sm overflow-hidden border border-coffee-tan/10">
-            <img src="https://iili.io/Broe4TJ.jpg" alt="Latte Art" className="w-full h-full object-cover grayscale-[20%]" referrerPolicy="no-referrer" />
+            <img src="https://www.dropbox.com/scl/fi/l6nfhqcnio7mka468q4lv/1775770758059.png?rlkey=ydc5ylyc4xwjatg07ugcmk649&st=h963zynj&dl=0" alt="Latte Art" className="w-full h-full object-cover grayscale-[20%]" referrerPolicy="no-referrer" />
           </div>
         </div>
       </div>
