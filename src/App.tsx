@@ -525,11 +525,16 @@ const Footer = () => (
           <p className="font-serif italic text-lg opacity-60">"Unleash Your Time"</p>
         </div>
         <div className="flex gap-4">
-          <a href="#" className="w-10 h-10 rounded-sm border border-coffee-tan/20 flex items-center justify-center hover:bg-coffee-tan hover:text-black transition-all duration-500">
+          <a href="https://www.instagram.com/de_savour_coffee/" className="w-10 h-10 rounded-sm border border-coffee-tan/20 flex items-center justify-center hover:bg-coffee-tan hover:text-black transition-all duration-500">
             <Instagram size={18} />
           </a>
           <a href="#" className="w-10 h-10 rounded-sm border border-coffee-tan/20 flex items-center justify-center hover:bg-coffee-tan hover:text-black transition-all duration-500">
-            <Facebook size={18} />
+            <<img 
+              src="https://iili.io/BSHHbMx.png" 
+              alt="icon tiktok" 
+              className="h-10 w-auto object-contain"
+              referrerPolicy="no-referrer"
+              size={18} />
           </a>
         </div>
       </div>
