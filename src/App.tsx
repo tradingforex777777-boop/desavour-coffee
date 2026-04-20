@@ -530,7 +530,7 @@ const Footer = () => (
           </a>
           <a href="#" className="w-10 h-10 rounded-sm border border-coffee-tan/20 flex items-center justify-center hover:bg-coffee-tan hover:text-black transition-all duration-500">
             <img 
-              src="https://iili.io/BrnPXrx.png" 
+              src="https://iili.io/BroHUNa.png" 
               alt="icon tiktok"               
               size={18} />
           </a>
