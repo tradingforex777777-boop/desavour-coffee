@@ -514,7 +514,12 @@ const Footer = () => (
       <div className="flex flex-col md:flex-row justify-between items-center gap-10 pb-16 border-b border-coffee-tan/10">
         <div className="text-center md:text-left">
           <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
-            <Coffee className="text-coffee-tan" size={24} />
+            <img 
+              src="https://iili.io/BSHHbMx.png" 
+              alt="De' Savour Coffee Logo" 
+              className="h-10 w-auto object-contain"
+              referrerPolicy="no-referrer"
+            />
             <span className="font-display font-bold text-2xl tracking-tighter">DE' SAVOUR COFFEE</span>
           </div>
           <p className="font-serif italic text-lg opacity-60">"Unleash Your Time"</p>
