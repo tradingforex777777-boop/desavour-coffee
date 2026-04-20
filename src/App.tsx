@@ -248,7 +248,7 @@ const About = () => {
             
             <div className="space-y-8 text-coffee-cream opacity-80 font-sans leading-relaxed text-lg">
               <p>
-                Lahir di jantung Tambun pada awal tahun 2024, De' Savour adalah manifesto bagi pecinta kopi yang menghargai waktu dan rasa. Kami hadir bukan sekadar kafe, melainkan ruang di mana setiap detik Anda dihargai.
+                Lahir di jantung Tambun pada awal tahun 2024, De' Savour Coffee adalah manifesto bagi pecinta kopi yang menghargai waktu dan rasa. Kami hadir bukan sekadar kafe, melainkan ruang di mana setiap detik Anda dihargai.
               </p>
               
               <div className="grid sm:grid-cols-2 gap-8 pt-4">
@@ -304,7 +304,7 @@ const Description = () => (
             Presisi Dalam <span className="italic font-normal">Setiap Tetes</span>
           </h2>
           <p className="text-coffee-cream/70 text-lg font-sans leading-relaxed">
-            Setiap biji kopi kami dikurasi dengan ketat, mulai dari asal-usul tanah hingga metode pasca-panen. Di De' Savour, kami merayakan karakter unik kopi Nusantara dengan teknik seduh yang mengutamakan harmoni rasa.
+            Setiap biji kopi kami dikurasi dengan ketat, mulai dari asal-usul tanah hingga metode pasca-panen. Di De' Savour Coffee, kami merayakan karakter unik kopi Nusantara dengan teknik seduh yang mengutamakan harmoni rasa.
           </p>
           <button className="mt-8 border-b border-coffee-tan text-coffee-tan text-xs uppercase tracking-widest font-bold pb-2 hover:opacity-100 opacity-60 transition-opacity">
             Jelajahi Karater Biji Kami
@@ -312,10 +312,10 @@ const Description = () => (
         </div>
         <div className="md:w-7/12 grid grid-cols-12 gap-4">
           <div className="col-span-7 aspect-[4/5] rounded-sm overflow-hidden mt-12 border border-coffee-tan/10">
-            <img src="https://images.unsplash.com/photo-1544787210-2213d84ad960?auto=format&fit=crop&q=80&w=800" alt="Drip" className="w-full h-full object-cover grayscale-[20%]" referrerPolicy="no-referrer" />
+            <img src="https://iili.io/Brol9Xs.jpg" alt="Drip" className="w-full h-full object-cover grayscale-[20%]" referrerPolicy="no-referrer" />
           </div>
           <div className="col-span-5 aspect-[4/6] rounded-sm overflow-hidden border border-coffee-tan/10">
-            <img src="https://images.unsplash.com/photo-1541167760496-162955ed8a9f?auto=format&fit=crop&q=80&w=600" alt="Latte Art" className="w-full h-full object-cover grayscale-[20%]" referrerPolicy="no-referrer" />
+            <img src="https://iili.io/BroW5Pe.jpg" alt="Latte Art" className="w-full h-full object-cover grayscale-[20%]" referrerPolicy="no-referrer" />
           </div>
         </div>
       </div>
