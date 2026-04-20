@@ -89,8 +89,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center text-coffee-cream">
         <div className="flex flex-col">
           <span className={`text-[10px] uppercase tracking-[0.3em] text-coffee-tan mb-0.5 transition-opacity duration-300 ${isScrolled ? 'opacity-100' : 'opacity-0'}`}>Est. 2024 — Bekasi</span>
-          <div className="flex items-center gap-2">
-            <Coffee className="text-coffee-tan" size={24} />
+          <div className="flex items-center gap-3">
+            <img 
+              src="https://iili.io/BSHHbMx.png" 
+              alt="De' Savour Coffee Logo" 
+              className="h-10 w-auto object-contain"
+              referrerPolicy="no-referrer"
+            />
             <span className="font-display font-bold text-xl tracking-tighter">
               DE' SAVOUR
             </span>
