@@ -528,7 +528,7 @@ const Footer = () => (
           <a href="https://www.instagram.com/de_savour_coffee/" className="w-10 h-10 rounded-sm border border-coffee-tan/20 flex items-center justify-center hover:bg-coffee-tan hover:text-black transition-all duration-500">
             <Instagram size={18} />
           </a>
-          <a href="#" className="w-10 h-10 rounded-sm border border-coffee-tan/20 flex items-center justify-center hover:bg-coffee-tan hover:text-black transition-all duration-500">
+          <a href="https://www.tiktok.com/@de_savour_coffee/" className="w-10 h-10 rounded-sm border border-coffee-tan/20 flex items-center justify-center hover:bg-coffee-tan hover:text-black transition-all duration-500">
             <img 
               src="https://iili.io/Bro2VNn.png" 
               alt="icon tiktok"               
