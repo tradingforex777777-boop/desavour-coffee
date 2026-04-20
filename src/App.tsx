@@ -529,7 +529,7 @@ const Footer = () => (
             <Instagram size={18} />
           </a>
           <a href="#" className="w-10 h-10 rounded-sm border border-coffee-tan/20 flex items-center justify-center hover:bg-coffee-tan hover:text-black transition-all duration-500">
-            <<img 
+            <img 
               src="https://iili.io/BSHHbMx.png" 
               alt="icon tiktok" 
               className="h-10 w-auto object-contain"
