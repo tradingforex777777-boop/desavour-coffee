@@ -97,7 +97,7 @@ const Navbar = () => {
               referrerPolicy="no-referrer"
             />
             <span className="font-display font-bold text-xl tracking-tighter">
-              DE' SAVOUR
+              DE' SAVOUR COFFEE
             </span>
           </div>
         </div>
@@ -439,7 +439,7 @@ const Contact = () => {
                 <div>
                   <p className="font-display font-bold uppercase text-[10px] tracking-widest opacity-40 mb-1">Alamat</p>
                   <p className="text-lg font-sans font-medium max-w-sm">
-                    Jl. KH. Abu Bakar No. 24, Tambun Selatan, Bekasi - Jawa Barat
+                    Perum Papan Mas Indah Blok F28 No.2, Setiamekar, Kec. Tambun Sel., Kabupaten Bekasi, Jawa Barat 17510
                   </p>
                 </div>
               </div>
@@ -450,7 +450,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-display font-bold uppercase text-[10px] tracking-widest opacity-40 mb-1">Operasional</p>
-                  <p className="text-lg font-sans font-medium">9 AM - 10 PM (DAILY)</p>
+                  <p className="text-lg font-sans font-medium">16:00 - 01:00 (DAILY)</p>
                 </div>
               </div>
 
@@ -461,7 +461,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-display font-bold uppercase text-[10px] tracking-widest opacity-40 mb-1">Telepon</p>
-                    <p className="text-sm font-sans font-medium">+62 812-3456-7890</p>
+                    <p className="text-sm font-sans font-medium">+6282312451989</p>
                   </div>
                 </div>
                 <div className="flex gap-5">
@@ -470,14 +470,14 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-display font-bold uppercase text-[10px] tracking-widest opacity-40 mb-1">Email</p>
-                    <p className="text-sm font-sans font-medium">hello@desavour.coffee</p>
+                    <p className="text-sm font-sans font-medium">de.savour.official@gmail.com</p>
                   </div>
                 </div>
               </div>
 
               <div className="pt-6">
                 <a 
-                  href="https://wa.me/6281234567890" 
+                  href="https://wa.me/6282312451989" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 bg-coffee-tan text-black px-10 py-3 rounded-sm font-sans font-bold uppercase tracking-widest hover:bg-coffee-cream transition-all duration-500 text-sm"
@@ -495,7 +495,7 @@ const Contact = () => {
             className="relative min-h-[400px] overflow-hidden rounded-sm shadow-2xl border border-coffee-tan/20 shadow-black/60"
           >
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15863.633857502693!2d107.0519391!3d-6.2626245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698ef658ae097f%3A0xc3b8a68a5293297a!2sTambun%2C%20South%20Tambun%2C%20Bekasi%20Regency%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1713580000000!5m2!1sen!2sid" 
+              src="Q322+FC Setiamekar, Kabupaten Bekasi, Jawa Barat" 
               className="w-full h-full absolute inset-0 border-0 invert grayscale opacity-80"
               allowFullScreen={true} 
               loading="lazy" 
@@ -515,7 +515,7 @@ const Footer = () => (
         <div className="text-center md:text-left">
           <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
             <Coffee className="text-coffee-tan" size={24} />
-            <span className="font-display font-bold text-2xl tracking-tighter">DE' SAVOUR</span>
+            <span className="font-display font-bold text-2xl tracking-tighter">DE' SAVOUR COFFEE</span>
           </div>
           <p className="font-serif italic text-lg opacity-60">"Unleash Your Time"</p>
         </div>
@@ -529,7 +529,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="pt-10 flex flex-col md:flex-row justify-between items-center gap-6 text-[9px] opacity-30 font-sans uppercase tracking-[0.4em] font-semibold">
-        <p>&copy; 2024 DE' SAVOUR COFFEE COMPANY. ALL RIGHTS RESERVED.</p>
+        <p>&copy; 2026 DE' SAVOUR COFFEE COMPANY. ALL RIGHTS RESERVED.</p>
         <div className="flex gap-10">
           <a href="#" className="hover:text-coffee-tan transition-colors">Privacy</a>
           <a href="#" className="hover:text-coffee-tan transition-colors">Terms</a>
