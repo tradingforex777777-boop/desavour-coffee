@@ -305,10 +305,7 @@ const Description = () => (
           </h2>
           <p className="text-coffee-cream/70 text-lg font-sans leading-relaxed">
             Setiap biji kopi kami dikurasi dengan ketat, mulai dari asal-usul tanah hingga metode pasca-panen. Di De' Savour Coffee, kami merayakan karakter unik kopi Nusantara dengan teknik seduh yang mengutamakan harmoni rasa.
-          </p>
-          <button className="mt-8 border-b border-coffee-tan text-coffee-tan text-xs uppercase tracking-widest font-bold pb-2 hover:opacity-100 opacity-60 transition-opacity">
-            Jelajahi Karater Biji Kami
-          </button>
+          </p>          
         </div>
         <div className="md:w-7/12 grid grid-cols-12 gap-4">
           <div className="col-span-7 aspect-[4/5] rounded-sm overflow-hidden mt-12 border border-coffee-tan/10">            
