@@ -72,6 +72,62 @@ const GALLERY_IMAGES = [
   "https://i.ibb.co.com/4nchLqZB/IMG-20260422-015310-jpg.jpg"
 ];
 
+<style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        .slider-container {
+            max-width: 800px;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .slides {
+            display: none;
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            vertical-align: middle;
+            height: 450px;
+            object-fit: cover;
+        }
+
+        /* Tombol Navigasi */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: rgba(0,0,0,0.3);
+        }
+
+        .next { right: 0; border-radius: 3px 0 0 3px; }
+        .prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
+
+        /* Animasi Fade */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+    </style>
+
 // --- Components ---
 
 const Navbar = () => {
@@ -395,22 +451,48 @@ const GallerySlider = () => {
         </div>
       </div>
       
-      <div className="relative h-[450px]">
-        <div className="flex gap-6 absolute left-1/2 top-0 transition-transform duration-1000 cubic-bezier(0.4, 0, 0.2, 1)" style={{ transform: `translateX(calc(-10% - ${index * (380 + 24)}px))` }}>
-          {GALLERY_IMAGES.map((img, i) => (
-            <motion.div 
-              key={i}
-              animate={{ 
-                scale: index === i ? 1 : 0.9,
-                opacity: index === i ? 1 : 0.3
-              }}
-              className="w-[380px] md:w-[600px] h-[450px] shrink-0 rounded-sm overflow-hidden border border-coffee-tan/10 shadow-2xl"
-            >
-              <img src={img} alt={`Gallery ${i}`} className="w-full h-full object-cover grayscale-[30%] />
-            </motion.div>
-          ))}
-        </div>
-      </div>
+      <div class="slider-container">
+    <div class="slides fade">
+        <img src="https://picsum.photos/id/10/800/450" alt="Gambar 1">
+    </div>
+
+    <div class="slides fade">
+        <img src="https://picsum.photos/id/20/800/450" alt="Gambar 2">
+    </div>
+
+    <div class="slides fade">
+        <img src="https://picsum.photos/id/28/800/450" alt="Gambar 3">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Fungsi untuk tombol Next/Prev
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slides[slideIndex-1].style.display = "block";  
+    }
+
+    // Opsional: Auto Play (berpindah setiap 5 detik)
+    setInterval(() => {
+        plusSlides(1);
+    }, 5000);
+</script>
     </section>
   );
 };
