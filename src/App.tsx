@@ -565,9 +565,9 @@ export default function App() {
       <div className="relative">
         <About />
         <Quote />
-        <Description />
-        <News />
+        <Description />        
         <GallerySlider />
+        <News />
         <Contact />
       </div>
       <Footer />
