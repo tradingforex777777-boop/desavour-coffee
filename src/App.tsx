@@ -62,9 +62,7 @@ const HERO_IMAGES = [
   "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&q=80&w=1920"
 ];
 
-const GALLERY_IMAGES = [
-  "https://i.ibb.co.com/HDxKvvdh/IMG-20260422-015019-jpg.jpg",
-  "https://i.ibb.co.com/ynv3n1Tj/IMG-20260422-015041-jpg.jpg",
+const GALLERY_IMAGES = [  
   "https://i.ibb.co.com/cVfZ9tM/IMG-20260422-015136-jpg.jpg",
   "https://i.ibb.co.com/SDnr7dSD/IMG-20260422-015202-jpg.jpg",
   "https://i.ibb.co.com/BVdnHwzV/IMG-20260422-015226-jpg.jpg",
