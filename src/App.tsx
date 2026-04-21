@@ -406,7 +406,7 @@ const GallerySlider = () => {
               }}
               className="w-[380px] md:w-[600px] h-[450px] shrink-0 rounded-sm overflow-hidden border border-coffee-tan/10 shadow-2xl"
             >
-              <img src={img} alt={`Gallery ${i}`} className="w-full h-full object-cover grayscale-[0%] hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer" />
+              <img src={img} alt={`Gallery ${i}`} className="w-full h-full object-cover grayscale-[100%] hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer" />
             </motion.div>
           ))}
         </div>
