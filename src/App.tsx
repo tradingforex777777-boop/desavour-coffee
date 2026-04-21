@@ -227,7 +227,7 @@ const About = () => {
           >
             <div className="aspect-[4/5] rounded-sm overflow-hidden border border-coffee-tan/20">
               <img 
-                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=800" 
+                src="https://i.ibb.co.com/WWGgYdbC/IMG-20260422-015002-jpg.jpg"
                 alt="Cafe history" 
                 className="w-full h-full object-cover grayscale-[30%] hover:grayscale-0 transition-all duration-1000"
                 referrerPolicy="no-referrer"
