@@ -396,7 +396,7 @@ const GallerySlider = () => {
       </div>
       
       <div className="relative h-[450px]">
-        <div className="flex gap-6 absolute left-1/2 top-0 transition-transform duration-1000 cubic-bezier(0.4, 0, 0.2, 1)" style={{ transform: `translateX(calc(-50% - ${index * (380 + 24)}px))` }}>
+        <div className="flex gap-6 absolute left-1/2 top-0 transition-transform duration-100 cubic-bezier(0.4, 0, 0.2, 1)" style={{ transform: `translateX(calc(-10% - ${index * (380 + 24)}px))` }}>
           {GALLERY_IMAGES.map((img, i) => (
             <motion.div 
               key={i}
@@ -406,7 +406,7 @@ const GallerySlider = () => {
               }}
               className="w-[380px] md:w-[600px] h-[450px] shrink-0 rounded-sm overflow-hidden border border-coffee-tan/10 shadow-2xl"
             >
-              <img src={img} alt={`Gallery ${i}`} className="w-full h-full object-cover grayscale-[100%] hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer" />
+              <img src={img} alt={`Gallery ${i}`} className="w-full h-full object-cover grayscale-[30%] hover:grayscale-0 transition-all duration-100" referrerPolicy="no-referrer" />
             </motion.div>
           ))}
         </div>
