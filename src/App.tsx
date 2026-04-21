@@ -70,63 +70,32 @@ const GALLERY_IMAGES = [
   "https://i.ibb.co.com/BVdnHwzV/IMG-20260422-015226-jpg.jpg",
   "https://i.ibb.co.com/h00b0Dn/IMG-20260422-015249-jpg.jpg",
   "https://i.ibb.co.com/4nchLqZB/IMG-20260422-015310-jpg.jpg"
-];
-
-<style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        
-        .slider-container {
-            max-width: 800px;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
-
-        .slides {
-            display: none;
-            width: 100%;
-        }
-
-        img {
-            width: 100%;
-            vertical-align: middle;
-            height: 450px;
-            object-fit: cover;
-        }
-
-        /* Tombol Navigasi */
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            background-color: rgba(0,0,0,0.3);
-        }
-
-        .next { right: 0; border-radius: 3px 0 0 3px; }
-        .prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
-
-        /* Animasi Fade */
-        .fade {
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-
-        @keyframes fade {
-            from {opacity: .4} 
-            to {opacity: 1}
-        }
-    </style>
+];    
+    <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+      
+          // Fungsi untuk tombol Next/Prev
+          function plusSlides(n) {
+              showSlides(slideIndex += n);
+          }
+      
+          function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("slides");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              slides[slideIndex-1].style.display = "block";  
+          }
+      
+          // Opsional: Auto Play (berpindah setiap 5 detik)
+          setInterval(() => {
+              plusSlides(1);
+          }, 5000);
+      </script>
 
 // --- Components ---
 
@@ -435,14 +404,61 @@ const News = () => {
     <section id="gallery" className="py-24 bg-coffee-dark overflow-hidden text-coffee-cream">
       <div className="max-w-7xl mx-auto px-6 mb-12 flex justify-between items-center text-coffee-cream">
         <h2 className="font-display font-bold text-4xl uppercase tracking-tight">Galeri <span className="italic font-normal">Momen</span></h2>
-        <div className="flex gap-2">
-          <button onClick={handlePrev} className="w-10 h-10 rounded-sm border border-coffee-tan/30 flex items-center justify-center hover:bg-coffee-tan hover:text-black transition-all">
-            <ChevronLeft size={16} />
-          </button>
-          <button onClick={handleNext} className="w-10 h-10 rounded-sm border border-coffee-tan/30 flex items-center justify-center hover:bg-coffee-tan hover:text-black transition-all">
-            <ChevronRight size={16} />
-          </button>
-        </div>
+            <style>
+            * { box-sizing: border-box; margin: 0; padding: 0; }
+            
+            .slider-container {
+                max-width: 800px;
+                position: relative;
+                margin: auto;
+                overflow: hidden;
+                border-radius: 10px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            }
+    
+            .slides {
+                display: none;
+                width: 100%;
+            }
+    
+            img {
+                width: 100%;
+                vertical-align: middle;
+                height: 450px;
+                object-fit: cover;
+            }
+    
+            /* Tombol Navigasi */
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                background-color: rgba(0,0,0,0.3);
+            }
+    
+            .next { right: 0; border-radius: 3px 0 0 3px; }
+            .prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
+    
+            /* Animasi Fade */
+            .fade {
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+    
+            @keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+        </style>
       </div>      
             <div class="slider-container">
           <div class="slides fade">
@@ -460,32 +476,6 @@ const News = () => {
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-      
-      <script>
-          let slideIndex = 1;
-          showSlides(slideIndex);
-      
-          // Fungsi untuk tombol Next/Prev
-          function plusSlides(n) {
-              showSlides(slideIndex += n);
-          }
-      
-          function showSlides(n) {
-              let i;
-              let slides = document.getElementsByClassName("slides");
-              if (n > slides.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";  
-              }
-              slides[slideIndex-1].style.display = "block";  
-          }
-      
-          // Opsional: Auto Play (berpindah setiap 5 detik)
-          setInterval(() => {
-              plusSlides(1);
-          }, 5000);
-      </script>
     </section>
   );
 };
