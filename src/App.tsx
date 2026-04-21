@@ -558,7 +558,8 @@ export default function App() {
         <About />
         <Quote />
         <Description />
-        <News />        
+        <News />
+        <GallerySlider />
         <Contact />
       </div>
       <Footer />
