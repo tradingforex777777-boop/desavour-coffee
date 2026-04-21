@@ -431,12 +431,6 @@ const News = () => {
   );
 };
 
-const GallerySlider = () => {
-  const [index, setIndex] = useState(2);
-
-  const handlePrev = () => setIndex((prev) => (prev === 0 ? GALLERY_IMAGES.length - 1 : prev - 1));
-  const handleNext = () => setIndex((prev) => (prev === GALLERY_IMAGES.length - 1 ? 0 : prev + 1));
-
   return (
     <section id="gallery" className="py-24 bg-coffee-dark overflow-hidden text-coffee-cream">
       <div className="max-w-7xl mx-auto px-6 mb-12 flex justify-between items-center text-coffee-cream">
