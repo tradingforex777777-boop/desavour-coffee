@@ -69,7 +69,17 @@ const GALLERY_IMAGES = [
   "https://i.ibb.co.com/SDnr7dSD/IMG-20260422-015202-jpg.jpg",
   "https://i.ibb.co.com/BVdnHwzV/IMG-20260422-015226-jpg.jpg",
   "https://i.ibb.co.com/h00b0Dn/IMG-20260422-015249-jpg.jpg",
-  "https://i.ibb.co.com/4nchLqZB/IMG-20260422-015310-jpg.jpg"
+  "https://i.ibb.co.com/4nchLqZB/IMG-20260422-015310-jpg.jpg",
+  "https://i.ibb.co.com/pr5gyBJK/Whats-App-Image-2026-04-22-at-03-26-54-1.jpg",
+  "https://i.ibb.co.com/v4BWcGBL/Whats-App-Image-2026-04-22-at-03-26-54.jpg",
+  "https://i.ibb.co.com/tWHmdC6/Whats-App-Image-2026-04-22-at-03-26-55.jpg",
+  "https://i.ibb.co.com/W4JCMnfW/Whats-App-Image-2026-04-22-at-03-26-56-1.jpg",
+  "https://i.ibb.co.com/B5v6X1c3/Whats-App-Image-2026-04-22-at-03-26-56-2.jpg",
+  "https://i.ibb.co.com/nGpGz0q/Whats-App-Image-2026-04-22-at-03-26-56-3.jpg",
+  "https://i.ibb.co.com/hRzQm7JX/Whats-App-Image-2026-04-22-at-03-26-56-4.jpg",
+  "https://i.ibb.co.com/V0C7Yv1s/Whats-App-Image-2026-04-22-at-03-26-56.jpg",
+  "https://i.ibb.co.com/zTdJ57Zq/Whats-App-Image-2026-04-22-at-03-26-57-1.jpg",
+  "https://i.ibb.co.com/spMVqhSq/Whats-App-Image-2026-04-22-at-03-26-57.jpg"
 ]; 
 
 // --- Components ---
