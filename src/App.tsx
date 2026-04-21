@@ -63,11 +63,13 @@ const HERO_IMAGES = [
 ];
 
 const GALLERY_IMAGES = [
-  "https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&q=80&w=1000",
-  "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=80&w=1000",
-  "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=1000",
-  "https://images.unsplash.com/photo-1521017432531-fbd92d744264?auto=format&fit=crop&q=80&w=1000",
-  "https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&q=80&w=1000"
+  "https://i.ibb.co.com/HDxKvvdh/IMG-20260422-015019-jpg.jpg",
+  "https://i.ibb.co.com/ynv3n1Tj/IMG-20260422-015041-jpg.jpg",
+  "https://i.ibb.co.com/cVfZ9tM/IMG-20260422-015136-jpg.jpg",
+  "https://i.ibb.co.com/SDnr7dSD/IMG-20260422-015202-jpg.jpg",
+  "https://i.ibb.co.com/BVdnHwzV/IMG-20260422-015226-jpg.jpg",
+  "https://i.ibb.co.com/h00b0Dn/IMG-20260422-015249-jpg.jpg",
+  "https://i.ibb.co.com/4nchLqZB/IMG-20260422-015310-jpg.jpg"
 ];
 
 // --- Components ---
