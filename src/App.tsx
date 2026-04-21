@@ -70,32 +70,7 @@ const GALLERY_IMAGES = [
   "https://i.ibb.co.com/BVdnHwzV/IMG-20260422-015226-jpg.jpg",
   "https://i.ibb.co.com/h00b0Dn/IMG-20260422-015249-jpg.jpg",
   "https://i.ibb.co.com/4nchLqZB/IMG-20260422-015310-jpg.jpg"
-];    
-    <script>
-          let slideIndex = 1;
-          showSlides(slideIndex);
-      
-          // Fungsi untuk tombol Next/Prev
-          function plusSlides(n) {
-              showSlides(slideIndex += n);
-          }
-      
-          function showSlides(n) {
-              let i;
-              let slides = document.getElementsByClassName("slides");
-              if (n > slides.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";  
-              }
-              slides[slideIndex-1].style.display = "block";  
-          }
-      
-          // Opsional: Auto Play (berpindah setiap 5 detik)
-          setInterval(() => {
-              plusSlides(1);
-          }, 5000);
-      </script>
+]; 
 
 // --- Components ---
 
@@ -400,83 +375,48 @@ const News = () => {
   );
 };
 
+  const GallerySlider = () => {
   return (
-    <section id="gallery" className="py-24 bg-coffee-dark overflow-hidden text-coffee-cream">
-      <div className="max-w-7xl mx-auto px-6 mb-12 flex justify-between items-center text-coffee-cream">
-        <h2 className="font-display font-bold text-4xl uppercase tracking-tight">Galeri <span className="italic font-normal">Momen</span></h2>
-            <style>
-            * { box-sizing: border-box; margin: 0; padding: 0; }
-            
-            .slider-container {
-                max-width: 800px;
-                position: relative;
-                margin: auto;
-                overflow: hidden;
-                border-radius: 10px;
-                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            }
-    
-            .slides {
-                display: none;
-                width: 100%;
-            }
-    
-            img {
-                width: 100%;
-                vertical-align: middle;
-                height: 450px;
-                object-fit: cover;
-            }
-    
-            /* Tombol Navigasi */
-            .prev, .next {
-                cursor: pointer;
-                position: absolute;
-                top: 50%;
-                width: auto;
-                padding: 16px;
-                margin-top: -22px;
-                color: white;
-                font-weight: bold;
-                font-size: 18px;
-                transition: 0.6s ease;
-                border-radius: 0 3px 3px 0;
-                user-select: none;
-                background-color: rgba(0,0,0,0.3);
-            }
-    
-            .next { right: 0; border-radius: 3px 0 0 3px; }
-            .prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
-    
-            /* Animasi Fade */
-            .fade {
-                animation-name: fade;
-                animation-duration: 1.5s;
-            }
-    
-            @keyframes fade {
-                from {opacity: .4} 
-                to {opacity: 1}
-            }
-        </style>
-      </div>      
-            <div class="slider-container">
-          <div class="slides fade">
-              <img src="https://picsum.photos/id/10/800/450" alt="Gambar 1">
-          </div>
+    <section id="gallery" className="py-24 bg-coffee-dark overflow-hidden text-coffee-cream border-y border-coffee-tan/5">
+      <div className="max-w-7xl mx-auto px-6 mb-16 text-center">
+        <span className="text-xs uppercase tracking-[0.3em] text-coffee-tan mb-4 block font-semibold opacity-60">Visual Experience</span>
+        <h2 className="font-display font-bold text-4xl md:text-6xl uppercase tracking-tight">
+          Galeri <span className="italic font-normal">Momen</span>
+        </h2>
+      </div>
       
-          <div class="slides fade">
-              <img src="https://picsum.photos/id/20/800/450" alt="Gambar 2">
+      <div className="flex flex-col gap-8 opacity-80">
+        {/* Row 1: Right to Left */}
+        <div className="flex whitespace-nowrap overflow-hidden group">
+          <div className="flex animate-marquee-slow gap-8 group-hover:[animation-play-state:paused]">
+            {[...GALLERY_IMAGES, ...GALLERY_IMAGES].map((img, i) => (
+              <div 
+                key={i}
+                className="w-[300px] md:w-[450px] aspect-[4/3] rounded-sm overflow-hidden border border-coffee-tan/10 grayscale-[40%] hover:grayscale-0 transition-all duration-700"
+              >
+                <img src={img} alt={`Gallery-A-${i}`} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+              </div>
+            ))}
           </div>
-      
-          <div class="slides fade">
-              <img src="https://picsum.photos/id/28/800/450" alt="Gambar 3">
+        </div>
+
+        {/* Row 2: Left to Right */}
+        <div className="flex whitespace-nowrap overflow-hidden group">
+          <div className="flex animate-marquee-reverse-slow gap-8 group-hover:[animation-play-state:paused]">
+            {[...GALLERY_IMAGES.reverse(), ...GALLERY_IMAGES].map((img, i) => (
+              <div 
+                key={i}
+                className="w-[300px] md:w-[450px] aspect-[16/10] rounded-sm overflow-hidden border border-coffee-tan/10 grayscale-[40%] hover:grayscale-0 transition-all duration-700"
+              >
+                <img src={img} alt={`Gallery-B-${i}`} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+              </div>
+            ))}
           </div>
-      
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
       </div>
     </section>
+  );
+};
 
 const Contact = () => {
   return (
