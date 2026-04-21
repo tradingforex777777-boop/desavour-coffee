@@ -443,50 +443,49 @@ const News = () => {
             <ChevronRight size={16} />
           </button>
         </div>
+      </div>      
+            <div class="slider-container">
+          <div class="slides fade">
+              <img src="https://picsum.photos/id/10/800/450" alt="Gambar 1">
+          </div>
+      
+          <div class="slides fade">
+              <img src="https://picsum.photos/id/20/800/450" alt="Gambar 2">
+          </div>
+      
+          <div class="slides fade">
+              <img src="https://picsum.photos/id/28/800/450" alt="Gambar 3">
+          </div>
+      
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
       
-      <div class="slider-container">
-    <div class="slides fade">
-        <img src="https://picsum.photos/id/10/800/450" alt="Gambar 1">
-    </div>
-
-    <div class="slides fade">
-        <img src="https://picsum.photos/id/20/800/450" alt="Gambar 2">
-    </div>
-
-    <div class="slides fade">
-        <img src="https://picsum.photos/id/28/800/450" alt="Gambar 3">
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    // Fungsi untuk tombol Next/Prev
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("slides");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        slides[slideIndex-1].style.display = "block";  
-    }
-
-    // Opsional: Auto Play (berpindah setiap 5 detik)
-    setInterval(() => {
-        plusSlides(1);
-    }, 5000);
-</script>
+      <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+      
+          // Fungsi untuk tombol Next/Prev
+          function plusSlides(n) {
+              showSlides(slideIndex += n);
+          }
+      
+          function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("slides");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              slides[slideIndex-1].style.display = "block";  
+          }
+      
+          // Opsional: Auto Play (berpindah setiap 5 detik)
+          setInterval(() => {
+              plusSlides(1);
+          }, 5000);
+      </script>
     </section>
   );
 };
