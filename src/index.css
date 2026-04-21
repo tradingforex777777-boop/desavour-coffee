@@ -12,8 +12,8 @@
   --color-coffee-tan: #d2b48c;
   --color-coffee-cream: #f5f2ed;
 
-  --animate-marquee-slow: marquee-slow 70s linear infinite;
-  --animate-marquee-reverse-slow: marquee-reverse-slow 75s linear infinite;
+  --animate-marquee-slow: marquee-slow 80s linear infinite;
+  --animate-marquee-reverse-slow: marquee-reverse-slow 85s linear infinite;
 
   @keyframes marquee-slow {
     0% { transform: translateX(0); }
