@@ -324,7 +324,7 @@ const Description = () => (
             Presisi Dalam <span className="italic font-normal">Setiap Tetes</span>
           </h2>
           <p className="text-coffee-cream/70 text-lg font-sans leading-relaxed">
-            Kopi yang sempurna bukanlah sebuah kebetulan. Ia adalah hasil dari perhitungan matematis yang harmonis antara suhu air, ukuran gilingan, dan waktu kontak. Di De' Savour Coffee, kami tidak sekadar menyeduh; kami mengalibrasi pengalaman. Kami percaya bahwa keajaiban rasa tersembunyi dalam detail terkecil—karena kesempurnaan sejati hadir melalui Presisi Dalam Setiap Tetes.
+            Kopi yang sempurna bukanlah sebuah kebetulan. Ia adalah hasil dari perhitungan matematis yang harmonis antara suhu air, ukuran gilingan, dan waktu kontak. Di De' Savour Coffee, kami tidak sekadar menyeduh. Kami percaya bahwa keajaiban rasa tersembunyi dalam kesempurnaan sejati hadir melalui Presisi Dalam Setiap Tetes.
           </p>          
         </div>
         <div className="md:w-7/12 grid grid-cols-12 gap-4">
