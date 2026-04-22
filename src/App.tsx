@@ -30,34 +30,39 @@ interface NewsItem {
   date: string;
   image: string;
   category: string;
+  description: string;
 }
 
 const NEWS: NewsItem[] = [
   {
     id: 1,
-    title: "Pasar Global: Harga Kopi Mulai Stabil Setelah Efek Guncangan Pasar Global",
-    date: "15 April 2026",
-    image: "https://i.ibb.co.com/PGP5FQzZ/1776845510155.png",
-    category: "News",
-    deskripsi: "Harga kopi dunia khususnya Arabika mulai menunjukkan fase stabilisasi di kisaran Rp105.000 per kilogram. ​Penyebab Penurunan: Setelah sempat menembus angka rekor di akhir 2025, harga mulai terkoreksi karena proyeksi panen raya di Brasil yang diperkirakan mencapai 75 juta karung."
+    title: "Inovasi Teknologi AI untuk Kualitas Biji Kopi",
+    date: "15 Januari 2026",
+    image: "https://i.ibb.co.com/LMp20s6/1776845110713.png",
+    category: "Teknologi",
+    description: "​Tim peneliti dari Universitas Gadjah Mada baru saja meluncurkan metode pemilahan biji kopi berbasis Artificial Intelligence. Teknologi ini mampu memilah biji kopi lanang peaberry berkualitas tinggi hanya dalam hitungan detik. Inovasi ini diharapkan dapat meningkatkan nilai jual kopi petani lokal di pasar internasional."
   },
   {
     id: 2,
-    title: "Inovasi: Teknologi AI untuk Kualitas Biji Kopi",
-    date: "10 April 2026",
-    image: "https://i.ibb.co.com/LMp20s6/1776845110713.png",
-    category: "Teknologi",
-    deskripsi: "Tim peneliti dari Universitas Gadjah Mada baru saja meluncurkan metode pemilahan biji kopi berbasis Artificial Intelligence. Teknologi ini mampu memilah biji kopi lanang peaberry berkualitas tinggi hanya dalam hitungan detik. Inovasi ini diharapkan dapat meningkatkan nilai jual kopi petani lokal di pasar internasional."
+    title: "Harga Kopi Mulai Stabil Setelah Guncangan Pasar Global",
+    date: "10 Januari 2026",
+    image: "https://i.ibb.co.com/PGP5FQzZ/1776845510155.png",
+    category: "Berita",
+    description: "Memasuki pertengahan Januari 2026, harga kopi dunia hususnya Arabika mulai menunjukkan fase stabilisasi di kisaran Rp105.000 per kilogram. ​Penyebab Penurunan Setelah sempat menembus angka rekor di akhir 2025, harga mulai terkoreksi karena proyeksi panen raya di Brasil yang diperkirakan mencapai 75 juta karung. ​Dampak Lokal Di Indonesia, harga gabah kopi Gayo dilaporkan mengalami penurunan sekitar Rp6.000 per bambu pada pertengahan April, menyesuaikan dengan pergerakan pasar global."
   },
   {
     id: 3,
-    title: "Tren Konsumen 2026: Era Label Kopi Regeneratif,
-    date: "02 April 2026",
+    title: "Tren Konsumen 2026: Era Label Kopi Regeneratif",
+    date: "02 Januari 2024",
     image: "https://i.ibb.co.com/x8snJwB3/1776845764743.png",
     category: "Tren",
-    deskripsi: "Tahun 2026 menjadi titik balik munculnya label Kopi Regeneratif di rak-rak supermarket. ​Apa itu? Berbeda dengan label organik biasa, sertifikasi ini menjamin bahwa kopi diproduksi melalui metode yang aktif memperbaiki ekosistem tanah dan meningkatkan kesejahteraan petani secara signifikan."
+    description: "Tahun 2026 menjadi titik balik munculnya label Kopi Regeneratif di rak-rak supermarket. Berbeda dengan label organik biasa, sertifikasi ini menjamin bahwa kopi diproduksi melalui metode yang aktif memperbaiki ekosistem tanah dan meningkatkan kesejahteraan petani secara signifikan."
   }
 ];
+
+<a href="https://ibb.co.com/qz1PD29"><img src="https://i.ibb.co.com/LMp20s6/1776845110713.png" alt="1776845110713" border="0"></a>
+<a href="https://ibb.co.com/GQ8VnT3v"><img src="https://i.ibb.co.com/PGP5FQzZ/1776845510155.png" alt="1776845510155" border="0"></a>
+<a href="https://ibb.co.com/G3JZcG8F"><img src="https://i.ibb.co.com/x8snJwB3/1776845764743.png" alt="1776845764743" border="0"></a>
 
 const HERO_IMAGES = [
   "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=1920",
@@ -336,48 +341,52 @@ const Description = () => (
 const News = () => {
   return (
     <section id="news" className="py-24 bg-coffee-dark text-coffee-cream border-t border-coffee-tan/10">
-      <div className="max-w-7xl mx-auto px-6 text-coffee-cream">
-        <div className="flex justify-between items-end mb-16">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-6">
           <div>
             <span className="text-xs uppercase tracking-widest text-coffee-tan mb-4 block font-semibold border-b border-coffee-tan/20 pb-2 w-fit">Warta Terkini</span>
-            <h2 className="font-display font-bold text-4xl md:text-6xl uppercase leading-none">
-              Berita <span className="italic font-normal">Terbaru</span>
+            <h2 className="font-display font-bold text-4xl md:text-7xl uppercase leading-none">
+              Jurnal <span className="italic font-normal">Kopi</span>
             </h2>
           </div>
-          <button className="hidden sm:flex items-center gap-2 text-coffee-tan font-sans font-bold text-xs tracking-widest uppercase hover:opacity-70 transition-opacity">
-            Lihat Semua
+          <button className="flex items-center gap-2 text-coffee-tan font-sans font-bold text-[10px] tracking-[0.3em] uppercase hover:opacity-70 transition-opacity border border-coffee-tan/20 px-6 py-2 rounded-sm">
+            Lihat Semua Arsip
           </button>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="space-y-12">
           {NEWS.map((item, idx) => (
             <motion.div
               key={item.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: idx % 2 === 0 ? -30 : 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: idx * 0.1 }}
-              className="group glass p-4 rounded-sm border border-coffee-tan/5"
+              className={`flex flex-col ${idx % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-10 items-center group`}
             >
-              <div className="aspect-[16/9] overflow-hidden rounded-sm mb-6 border border-coffee-tan/10">
+              <div className="w-full md:w-1/2 aspect-[16/10] overflow-hidden rounded-sm border border-coffee-tan/10 shadow-2xl transition-all duration-700">
                 <img 
                   src={item.image} 
                   alt={item.title} 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 grayscale-[40%] group-hover:grayscale-0" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 grayscale-[30%] group-hover:grayscale-0" 
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <div className="flex items-center gap-3 mb-2">
-                <span className="text-[9px] font-bold uppercase tracking-widest text-coffee-tan">
-                  {item.category}
-                </span>
-                <span className="text-[9px] font-bold uppercase tracking-widest opacity-40">
-                  {item.date}
-                </span>
+              <div className="w-full md:w-1/2 flex flex-col gap-4">
+                <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-widest">
+                  <span className="text-coffee-tan px-3 py-1 bg-coffee-tan/5 border border-coffee-tan/20 rounded-full">{item.category}</span>
+                  <span className="opacity-40">{item.date}</span>
+                </div>
+                <h3 className="font-display font-bold text-3xl md:text-4xl leading-tight group-hover:text-coffee-tan transition-colors">
+                  {item.title}
+                </h3>
+                <p className="text-coffee-cream/60 font-sans leading-relaxed text-sm max-w-lg">
+                  {item.description}
+                </p>
+                <button className="flex items-center gap-2 text-coffee-tan text-[10px] uppercase font-bold tracking-widest mt-4 group/btn w-fit">
+                  Baca Selengkapnya 
+                  <ArrowRight size={14} className="group-hover/btn:translate-x-2 transition-transform" />
+                </button>
               </div>
-              <h3 className="font-display font-bold text-xl group-hover:text-coffee-tan transition-colors line-clamp-2 leading-tight">
-                {item.title}
-              </h3>
             </motion.div>
           ))}
         </div>
@@ -568,9 +577,9 @@ export default function App() {
       <div className="relative">
         <About />
         <Quote />
-        <Description />
+        <Description />        
+        <GallerySlider />
         <News />
-        <GallerySlider />        
         <Contact />
       </div>
       <Footer />
