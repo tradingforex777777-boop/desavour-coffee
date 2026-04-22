@@ -335,7 +335,7 @@ const News = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-6">
           <div>
-            <span className="text-xs uppercase tracking-widest text-coffee-tan mb-4 block font-semibold border-b border-coffee-tan/20 pb-2 w-100">Warta Terkini</span>
+            <span className="text-xs uppercase tracking-widest text-coffee-tan mb-4 block font-semibold border-b border-coffee-tan/20 pb-2 w-fit">Warta Terkini</span>
             <h2 className="font-display font-bold text-4xl md:text-7xl uppercase leading-none">
               Jurnal <span className="italic font-normal">Kopi</span>
             </h2>
@@ -354,15 +354,15 @@ const News = () => {
               viewport={{ once: true }}
               className={`flex flex-col ${idx % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-10 items-center group`}
             >
-              <div className="w-100 md:w-1/2 aspect-[16/10] overflow-hidden rounded-sm border border-coffee-tan/10 shadow-2xl transition-all duration-700">
+              <div className="w-fit md:w-1/2 aspect-[16/10] overflow-hidden rounded-sm border border-coffee-tan/10 shadow-2xl transition-all duration-700">
                 <img 
                   src={item.image} 
                   alt={item.title} 
-                  className="w-100 h-full object-cover group-hover:scale-105 transition-transform duration-1000 grayscale-[30%] group-hover:grayscale-0" 
+                  className="w-fit h-fit object-cover group-hover:scale-105 transition-transform duration-1000 grayscale-[30%] group-hover:grayscale-0" 
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <div className="w-100 md:w-1/2 flex flex-col gap-4">
+              <div className="w-fit md:w-1/2 flex flex-col gap-4">
                 <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-widest">
                   <span className="text-coffee-tan px-3 py-1 bg-coffee-tan/5 border border-coffee-tan/20 rounded-full">{item.category}</span>
                   <span className="opacity-40">{item.date}</span>
