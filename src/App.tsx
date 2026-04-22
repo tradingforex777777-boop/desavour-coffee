@@ -329,10 +329,10 @@ const Description = () => (
         </div>
         <div className="md:w-7/12 grid grid-cols-12 gap-4">
           <div className="col-span-7 aspect-[4/5] rounded-sm overflow-hidden mt-12 border border-coffee-tan/10">            
-            <img src="https://i.ibb.co.com/5WFWfcXC/a-cup-of-hot-coffee-with-latte-art-on-the-surface-with-the-leather-book-on-the-wooden-table-free-pho.jpg" alt="Drip" className="w-full h-full object-cover grayscale-[20%]" referrerPolicy="no-referrer" />
+            <img src="#" alt="Drip" className="w-full h-full object-cover grayscale-[20%]" referrerPolicy="no-referrer" />
           </div>
           <div className="col-span-5 aspect-[4/6] rounded-sm overflow-hidden border border-coffee-tan/10">            
-            <img src="https://i.ibb.co.com/dstG1mWq/5f74dd72633eb.jpg" alt="Latte Art" className="w-full h-full object-cover grayscale-[20%]" referrerPolicy="no-referrer" />
+            <img src="#" alt="Latte Art" className="w-full h-full object-cover grayscale-[20%]" referrerPolicy="no-referrer" />
           </div>
         </div>
       </div>
