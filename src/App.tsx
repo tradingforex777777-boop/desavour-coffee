@@ -115,12 +115,12 @@ const Navbar = () => {
         <a href="#" className="flex items-center gap-3">
           <img 
             src="https://iili.io/BSHHbMx.png" 
-            alt="De' Savour Coffee" 
+            alt="De' Savour Coffee Logo" 
             className="h-8 w-auto"
             referrerPolicy="no-referrer"
           />
           <span className="font-display font-bold text-xl tracking-tight text-coffee-cream">
-            DE' SAVOUR
+            DE' SAVOUR COFFEE
           </span>
         </a>
         
@@ -206,7 +206,7 @@ const Hero = () => {
         >
           <span className="text-xs uppercase tracking-[0.5em] text-coffee-tan mb-6 block font-semibold opacity-80">Tambun, Kota Bekasi</span>
           <h1 className="font-display font-bold text-6xl md:text-9xl mb-4 tracking-tighter uppercase leading-none">
-            De' Savour Coffee <span className="italic font-normal">Coffee</span>
+            De' Savour <span className="italic font-normal">Coffee</span>
           </h1>
           <p className="font-serif italic text-2xl md:text-3xl mb-12 text-coffee-tan opacity-90">
             "Unleash Your Time"
