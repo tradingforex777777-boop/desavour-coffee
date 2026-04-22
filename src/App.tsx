@@ -129,20 +129,9 @@ const Navbar = () => {
           <a href="#about" className="hover:text-coffee-tan transition-colors">Tentang</a>
           <a href="#news" className="hover:text-coffee-tan transition-colors">Berita</a>
           <a href="#gallery" className="hover:text-coffee-tan transition-colors">Galeri</a>
-          <a href="#contact" className="hover:text-coffee-tan transition-colors">Kontak</a>
-          <button className="border border-coffee-tan/30 px-6 py-2 rounded-sm hover:bg-coffee-tan hover:text-black transition-all">
-            Menu
-          </button>
+          <a href="#contact" className="hover:text-coffee-tan transition-colors">Kontak</a>          
         </div>
-
-        {/* Mobile Menu Button icon */}
-        <button 
-          className="md:hidden text-coffee-cream" 
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-
+        
         {/* Simplified Mobile Menu Dropdown */}
         <AnimatePresence>
           {isMobileMenuOpen && (
@@ -155,8 +144,7 @@ const Navbar = () => {
               <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Tentang</a>
               <a href="#news" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Berita</a>
               <a href="#gallery" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Galeri</a>
-              <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Kontak</a>
-              <button className="bg-coffee-tan text-black px-10 py-3 rounded-sm font-bold uppercase tracking-widest text-xs mt-4">Menu</button>
+              <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Kontak</a>              
             </motion.div>
           )}
         </AnimatePresence>
