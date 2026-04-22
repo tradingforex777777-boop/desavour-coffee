@@ -264,7 +264,7 @@ const About = () => {
             
             <div className="space-y-8 text-coffee-cream opacity-80 font-sans leading-relaxed text-lg">
               <p>
-                Lahir di jantung Tambun pada awal tahun 2024, De' Savour Coffee adalah manifesto bagi pecinta kopi yang menghargai waktu dan rasa. Kami hadir bukan sekadar kafe, melainkan ruang di mana setiap detik Anda dihargai.
+                Lahir di jantung Tambun Bekasi pada tanggal 17 Agustus 2024, De' Savour Coffee adalah manifesto bagi pecinta kopi yang menghargai waktu dan rasa. Kami hadir bukan sekadar kafe, melainkan ruang di mana setiap detik Anda dihargai.
               </p>
               
               <div className="grid sm:grid-cols-2 gap-8 pt-4">
