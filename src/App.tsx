@@ -111,7 +111,7 @@ const Navbar = () => {
               referrerPolicy="no-referrer"
             />
             <span className="font-display font-bold text-lg md:text-xl tracking-tighter">
-              DE' SAVOUR C4OFFEE
+              DE' SAVOUR COFFEE
             </span>
           </div>
         </div>
