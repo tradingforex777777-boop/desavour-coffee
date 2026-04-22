@@ -358,11 +358,11 @@ const News = () => {
                 <img 
                   src={item.image} 
                   alt={item.title} 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 grayscale-[30%] group-hover:grayscale-0" 
+                  className="w-100 h-full object-cover group-hover:scale-105 transition-transform duration-1000 grayscale-[30%] group-hover:grayscale-0" 
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <div className="w-full md:w-1/2 flex flex-col gap-4">
+              <div className="w-100 md:w-1/2 flex flex-col gap-4">
                 <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-widest">
                   <span className="text-coffee-tan px-3 py-1 bg-coffee-tan/5 border border-coffee-tan/20 rounded-full">{item.category}</span>
                   <span className="opacity-40">{item.date}</span>
@@ -569,7 +569,8 @@ export default function App() {
         <About />
         <Quote />
         <Description />        
-        <GallerySlider />        
+        <GallerySlider />
+        <News />
         <Contact />
       </div>
       <Footer />
