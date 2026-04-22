@@ -5,7 +5,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { teknologi } from "../../assets";
+import { teknologi.png } from "../src/assets";
 import { 
   Coffee, 
   MapPin, 
