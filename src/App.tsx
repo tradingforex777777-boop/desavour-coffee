@@ -91,74 +91,69 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-      isScrolled ? 'bg-coffee-dark/95 backdrop-blur-md py-3 md:py-4 border-b border-coffee-tan/10 shadow-lg' : 'bg-transparent py-4 md:py-6'
+      isScrolled ? 'bg-coffee-dark/95 backdrop-blur-md border-b border-coffee-tan/10 shadow-lg py-4' : 'bg-transparent py-6'
     }`}>
-      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center text-coffee-cream">
-        <div className="flex flex-col">
-          <span className={`text-[8px] md:text-[10px] uppercase tracking-[0.3em] text-coffee-tan mb-0.5 transition-opacity duration-300 ${isScrolled ? 'opacity-100' : 'opacity-0'}`}>Est. 2024 — Bekasi</span>
-          <div className="flex items-center gap-2 md:gap-3">
-            <img 
-              src="https://iili.io/BSHHbMx.png" 
-              alt="De' Savour Coffee Logo" 
-              className="h-8 md:h-10 w-auto object-contain"
-              referrerPolicy="no-referrer"
-            />
-            <span className="font-display font-bold text-lg md:text-xl tracking-tighter">
-              DE' SAVOUR COFFEE
-            </span>
-          </div>
-        </div>
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+        <a href="#" className="flex items-center gap-3">
+          <img 
+            src="https://iili.io/BSHHbMx.png" 
+            alt="De' Savour Coffee" 
+            className="h-8 w-auto"
+            referrerPolicy="no-referrer"
+          />
+          <span className="font-display font-bold text-xl tracking-tight text-coffee-cream">
+            DE' SAVOUR
+          </span>
+        </a>
         
-        {/* Desktop Nav */}
-        <div className={`hidden md:flex items-center gap-10 font-sans text-xs font-semibold tracking-widest uppercase text-coffee-cream`}>
+        {/* Simple Desktop Nav */}
+        <div className="hidden md:flex items-center gap-10 text-[11px] font-bold uppercase tracking-[0.2em] text-coffee-cream/80">
           <a href="#about" className="hover:text-coffee-tan transition-colors">Tentang</a>
           <a href="#news" className="hover:text-coffee-tan transition-colors">Berita</a>
           <a href="#gallery" className="hover:text-coffee-tan transition-colors">Galeri</a>
           <a href="#contact" className="hover:text-coffee-tan transition-colors">Kontak</a>
-          <button className={`px-5 py-1.5 rounded-sm border border-coffee-tan/30 transition-all duration-300 hover:bg-coffee-tan hover:text-black`}>
+          <button className="border border-coffee-tan/30 px-6 py-2 rounded-sm hover:bg-coffee-tan hover:text-black transition-all">
             Menu
           </button>
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button icon */}
         <button 
-          className="md:hidden" 
+          className="md:hidden text-coffee-cream" 
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
-          {isMobileMenuOpen ? (
-            <X className="text-coffee-cream" size={28} />
-          ) : (
-            <Menu className="text-coffee-cream" size={28} />
-          )}
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
-      </div>
 
-      {/* Mobile Menu */}
-      <AnimatePresence>
-        {isMobileMenuOpen && (
-          <motion.div 
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            className="md:hidden absolute top-full left-0 w-full bg-coffee-dark/98 backdrop-blur-xl flex flex-col items-center py-8 gap-5 font-display font-medium text-lg text-coffee-cream border-t border-coffee-tan/10 shadow-2xl"
-          >
-            <a href="#about" onClick={() => setIsMobileMenuOpen(false)}>Tentang</a>
-            <a href="#news" onClick={() => setIsMobileMenuOpen(false)}>Berita</a>
-            <a href="#gallery" onClick={() => setIsMobileMenuOpen(false)}>Galeri</a>
-            <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Kontak</a>
-          </motion.div>
-        )}
-      </AnimatePresence>
+        {/* Simplified Mobile Menu Dropdown */}
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.div 
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              className="absolute top-full left-0 w-full bg-coffee-dark border-b border-coffee-tan/10 flex flex-col items-center py-10 gap-6 md:hidden z-50"
+            >
+              <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Tentang</a>
+              <a href="#news" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Berita</a>
+              <a href="#gallery" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Galeri</a>
+              <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Kontak</a>
+              <button className="bg-coffee-tan text-black px-10 py-3 rounded-sm font-bold uppercase tracking-widest text-xs mt-4">Menu</button>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     </nav>
   );
 };
+
 
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -200,7 +195,7 @@ const Hero = () => {
         >
           <span className="text-xs uppercase tracking-[0.5em] text-coffee-tan mb-6 block font-semibold opacity-80">Tambun, Kota Bekasi</span>
           <h1 className="font-display font-bold text-6xl md:text-9xl mb-4 tracking-tighter uppercase leading-none">
-            De' Savour <span className="italic font-normal">Coffee</span>
+            De' Savour Coffee <span className="italic font-normal">Coffee</span>
           </h1>
           <p className="font-serif italic text-2xl md:text-3xl mb-12 text-coffee-tan opacity-90">
             "Unleash Your Time"
