@@ -47,11 +47,11 @@ interface NewsItem {
 const NEWS: NewsItem[] = [
   {
     id: 1,
-    title: "Brewing Workshops: Mastering the V60",
-    date: "15 April 2024",
+    title: "Inovasi: Teknologi AI untuk Kualitas Biji Kopi",
+    date: "20 April 2026",
     image: "https://i.ibb.co.com/5X6Nr7xD/1776845110713.png",
-    category: "Event",
-    description: "Pelajari teknik seduh presisi V60 bersama barista ahli kami. Sempurnakan ekstraksi kopi Anda di rumah."
+    category: "Teknologi",
+    description: "Tim peneliti Fakultas Teknologi Pertanian Universitas Gadjah Mada mengembangkan teknologi pemilahan biji kopi berkulitas melalui pendekatan berbasis teknologi artificial intelligence (AI). Metode yang digunakan dalam penelitian ini adalah Near Infrared (NIR) Spectroscopy yang dikombinasikan dengan machine learning. Prosesnya dimulai dengan memancarkan cahaya ke biji kopi untuk menghasilkan spektrum yang merepresentasikan kandungan kimia di dalamnya. Spektrum tersebut kemudian dianalisis untuk mengidentifikasi komponen seperti kadar air, lemak, protein, dan senyawa lainnya. Widi berujar data yang dihasilkan menjadi dasar bagi sistem AI untuk mengenali pola khas setiap jenis kopi. Kesalahan dalam proses sortir dapat berdampak langsung pada kualitas dan nilai ekonomi produk kopi. Menurut Widi, biji kopi non-peaberry yang memiliki bentuk serupa berpotensi masuk ke kelompok peaberry, begitu pula sebaliknya. Kondisi ini menjadi krusial karena jumlah peaberry dalam satu panen relatif sedikit dibandingkan kopi reguler. Dengan proporsi yang hanya sekitar 5–7 persen, peaberry memiliki nilai jual yang lebih tinggi di pasar specialty coffee. Ketidaktepatan dalam pemisahan inilah dapat menyebabkan potensi kerugian bagi produsen. Kalau proses pemisahannya tidak optimal, nilai premium dari peaberry bisa hilang begitu saja. Selain berdampak pada aspek teknis, teknologi ini juga memiliki implikasi ekonomi yang cukup besar. Peaberry sebagai produk premium memiliki nilai jual lebih tinggi dibandingkan kopi biasa. Dengan proses sortasi yang lebih akurat, potensi peningkatan nilai produk menjadi semakin besar. Hal ini, menurut Widi, dapat memperkuat daya saing kopi Indonesia di pasar global. Nilai jual kopi bisa meningkat karena kualitasnya lebih terjamin dan terklasifikasi dengan baik. Sumber https://ugm.ac.id/id/berita/peneliti-ugm-kembangkan-metode-pemilahan-kopi-lanang-dalam-hitungan-detik/"
   },
   {
     id: 2,
