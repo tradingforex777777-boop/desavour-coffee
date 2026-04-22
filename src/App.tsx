@@ -35,7 +35,7 @@ interface NewsItem {
 const NEWS: NewsItem[] = [
   {
     id: 1,
-    title: "Pasar Global: Harga Kopi Mulai Stabil Setelah "Guncangan",
+    title: "Pasar Global: Harga Kopi Mulai Stabil Setelah Efek Guncangan Pasar Global",
     date: "15 April 2026",
     image: "https://i.ibb.co.com/PGP5FQzZ/1776845510155.png",
     category: "News",
