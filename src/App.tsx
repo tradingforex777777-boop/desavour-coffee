@@ -344,50 +344,54 @@ const News = () => {
   return (
     <section id="news" className="py-24 bg-coffee-dark text-coffee-cream border-t border-coffee-tan/10">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-6">
+        <div className="flex justify-between items-center mb-16 px-2">
           <div>
-            <span className="text-xs uppercase tracking-widest text-coffee-tan mb-4 block font-semibold border-b border-coffee-tan/20 pb-2 w-fit">Warta Terkini</span>
-            <h2 className="font-display font-bold text-4xl md:text-7xl uppercase leading-none">
+            <span className="text-[10px] uppercase tracking-[0.4em] text-coffee-tan mb-2 block font-bold opacity-70">Warta Terkini</span>
+            <h2 className="font-display font-bold text-4xl md:text-5xl uppercase tracking-tighter">
               Jurnal <span className="italic font-normal">Kopi</span>
             </h2>
           </div>
-          <button className="flex items-center gap-2 text-coffee-tan font-sans font-bold text-[10px] tracking-[0.3em] uppercase hover:opacity-70 transition-opacity border border-coffee-tan/20 px-6 py-2 rounded-sm">
-            Lihat Semua Arsip
+          <button className="hidden sm:block text-coffee-tan font-sans font-bold text-[10px] tracking-[0.2em] uppercase hover:text-coffee-cream transition-colors border-b border-coffee-tan/20 pb-1">
+            Lihat Arsip
           </button>
         </div>
 
-        <div className="space-y-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {NEWS.map((item, idx) => (
             <motion.div
               key={item.id}
-              initial={{ opacity: 0, x: idx % 2 === 0 ? -30 : 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className={`flex flex-col ${idx % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-10 items-center group`}
+              transition={{ delay: idx * 0.15 }}
+              className="flex flex-col group cursor-pointer"
             >
-              <div className="w-full md:w-1/2 aspect-[16/10] overflow-hidden rounded-sm border border-coffee-tan/10 shadow-2xl transition-all duration-700">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-sm mb-6 border border-coffee-tan/10 group-hover:border-coffee-tan/30 transition-colors duration-500">
                 <img 
                   src={item.image} 
                   alt={item.title} 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 grayscale-[30%] group-hover:grayscale-0" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s] grayscale-[20%] group-hover:grayscale-0 shadow-2xl" 
                   referrerPolicy="no-referrer"
                 />
-              </div>
-              <div className="w-full md:w-1/2 flex flex-col gap-4">
-                <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-widest">
-                  <span className="text-coffee-tan px-3 py-1 bg-coffee-tan/5 border border-coffee-tan/20 rounded-full">{item.category}</span>
-                  <span className="opacity-40">{item.date}</span>
+                <div className="absolute top-4 left-4">
+                  <span className="bg-coffee-dark/80 backdrop-blur-md px-3 py-1 text-[9px] font-bold uppercase tracking-widest text-coffee-tan border border-coffee-tan/20">
+                    {item.category}
+                  </span>
                 </div>
-                <h3 className="font-display font-bold text-3xl md:text-4xl leading-tight group-hover:text-coffee-tan transition-colors">
+              </div>
+              
+              <div className="flex flex-col gap-3 px-2">
+                <span className="text-[9px] uppercase tracking-[0.2em] opacity-40 font-bold">{item.date}</span>
+                <h3 className="font-display font-bold text-2xl group-hover:text-coffee-tan transition-colors leading-snug">
                   {item.title}
                 </h3>
-                <p className="text-coffee-cream/60 font-sans leading-relaxed text-sm max-w-lg">
+                <p className="text-coffee-cream/50 font-sans leading-relaxed text-xs line-clamp-3">
                   {item.description}
                 </p>
-                <button className="flex items-center gap-2 text-coffee-tan text-[10px] uppercase font-bold tracking-widest mt-4 group/btn w-fit">
+                <div className="flex items-center gap-2 text-coffee-tan text-[9px] uppercase font-bold tracking-[0.2em] mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
                   Baca Selengkapnya 
-                  <ArrowRight size={14} className="group-hover/btn:translate-x-2 transition-transform" />
-                </button>
+                  <ArrowRight size={12} />
+                </div>
               </div>
             </motion.div>
           ))}
