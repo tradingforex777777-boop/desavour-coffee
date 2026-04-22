@@ -55,7 +55,7 @@ const NEWS: NewsItem[] = [
     date: "02 April 2026",
     image: "https://i.ibb.co.com/x8snJwB3/1776845764743.png",
     category: "Tren",
-    deskripsi: "Tahun 2026 menjadi titik balik munculnya label "Kopi Regeneratif" di rak-rak supermarket. ​Apa itu? Berbeda dengan label organik biasa, sertifikasi ini menjamin bahwa kopi diproduksi melalui metode yang aktif memperbaiki ekosistem tanah dan meningkatkan kesejahteraan petani secara signifikan."
+    deskripsi: "Tahun 2026 menjadi titik balik munculnya label Kopi Regeneratif di rak-rak supermarket. ​Apa itu? Berbeda dengan label organik biasa, sertifikasi ini menjamin bahwa kopi diproduksi melalui metode yang aktif memperbaiki ekosistem tanah dan meningkatkan kesejahteraan petani secara signifikan."
   }
 ];
 
