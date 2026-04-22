@@ -341,6 +341,14 @@ const Description = () => (
 );
 
 const News = () => {
+  const [expandedItems, setExpandedItems] = useState<number[]>([]);
+
+  const toggleExpand = (id: number) => {
+    setExpandedItems(prev => 
+      prev.includes(id) ? prev.filter(itemId => itemId !== id) : [...prev, id]
+    );
+  };
+
   return (
     <section id="news" className="py-24 bg-coffee-dark text-coffee-cream border-t border-coffee-tan/10">
       <div className="max-w-7xl mx-auto px-6">
@@ -357,44 +365,48 @@ const News = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {NEWS.map((item, idx) => (
-            <motion.div
-              key={item.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.15 }}
-              className="flex flex-col group cursor-pointer"
-            >
-              <div className="relative aspect-[4/5] overflow-hidden rounded-sm mb-6 border border-coffee-tan/10 group-hover:border-coffee-tan/30 transition-colors duration-500">
-                <img 
-                  src={item.image} 
-                  alt={item.title} 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s] grayscale-[20%] group-hover:grayscale-0 shadow-2xl" 
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute top-4 left-4">
-                  <span className="bg-coffee-dark/80 backdrop-blur-md px-3 py-1 text-[9px] font-bold uppercase tracking-widest text-coffee-tan border border-coffee-tan/20">
-                    {item.category}
-                  </span>
+          {NEWS.map((item, idx) => {
+            const isExpanded = expandedItems.includes(item.id);
+            return (
+              <motion.div
+                key={item.id}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.15 }}
+                className="flex flex-col group cursor-pointer"
+                onClick={() => toggleExpand(item.id)}
+              >
+                <div className="relative aspect-[4/5] overflow-hidden rounded-sm mb-6 border border-coffee-tan/10 group-hover:border-coffee-tan/30 transition-colors duration-500">
+                  <img 
+                    src={item.image} 
+                    alt={item.title} 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s] grayscale-[20%] group-hover:grayscale-0 shadow-2xl" 
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-coffee-dark/80 backdrop-blur-md px-3 py-1 text-[9px] font-bold uppercase tracking-widest text-coffee-tan border border-coffee-tan/20">
+                      {item.category}
+                    </span>
+                  </div>
                 </div>
-              </div>
-              
-              <div className="flex flex-col gap-3 px-2">
-                <span className="text-[9px] uppercase tracking-[0.2em] opacity-40 font-bold">{item.date}</span>
-                <h3 className="font-display font-bold text-2xl group-hover:text-coffee-tan transition-colors leading-snug">
-                  {item.title}
-                </h3>
-                <p className="text-coffee-cream/50 font-sans leading-relaxed text-xs line-clamp-3">
-                  {item.description}
-                </p>
-                <div className="flex items-center gap-2 text-coffee-tan text-[9px] uppercase font-bold tracking-[0.2em] mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                  Baca Selengkapnya 
-                  <ArrowRight size={12} />
+                
+                <div className="flex flex-col gap-3 px-2">
+                  <span className="text-[9px] uppercase tracking-[0.2em] opacity-40 font-bold">{item.date}</span>
+                  <h3 className="font-display font-bold text-2xl group-hover:text-coffee-tan transition-colors leading-snug">
+                    {item.title}
+                  </h3>
+                  <p className={`text-coffee-cream/50 font-sans leading-relaxed text-xs transition-all duration-500 ${isExpanded ? '' : 'line-clamp-3'}`}>
+                    {item.description}
+                  </p>
+                  <div className="flex items-center gap-2 text-coffee-tan text-[9px] uppercase font-bold tracking-[0.2em] mt-4 opacity-70 group-hover:opacity-100 transition-opacity">
+                    {isExpanded ? 'Tutup' : 'Baca Selengkapnya'} 
+                    <ArrowRight size={12} className={`transition-transform duration-300 ${isExpanded ? 'rotate-90' : ''}`} />
+                  </div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
