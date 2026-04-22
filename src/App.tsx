@@ -38,7 +38,7 @@ const NEWS: NewsItem[] = [
     title: "Pasar Global: Harga Kopi Mulai Stabil Setelah "Guncangan",
     date: "15 April 2026",
     image: "https://i.ibb.co.com/PGP5FQzZ/1776845510155.png",
-    category: "News"
+    category: "News",
     deskripsi: "Harga kopi dunia (khususnya Arabika) mulai menunjukkan fase stabilisasi di kisaran Rp105.000 per kilogram. ​Penyebab Penurunan: Setelah sempat menembus angka rekor di akhir 2025, harga mulai terkoreksi karena proyeksi panen raya di Brasil yang diperkirakan mencapai 75 juta karung."
   },
   {
@@ -46,7 +46,7 @@ const NEWS: NewsItem[] = [
     title: "Inovasi: Teknologi AI untuk Kualitas Biji Kopi",
     date: "10 April 2026",
     image: "https://i.ibb.co.com/LMp20s6/1776845110713.png",
-    category: "Teknologi"
+    category: "Teknologi",
     deskripsi: "Tim peneliti dari Universitas Gadjah Mada (UGM) baru saja meluncurkan metode pemilahan biji kopi berbasis Artificial Intelligence (AI). Teknologi ini mampu memilah biji kopi "lanang" (peaberry) berkualitas tinggi hanya dalam hitungan detik. Inovasi ini diharapkan dapat meningkatkan nilai jual kopi petani lokal di pasar internasional."
   },
   {
@@ -54,7 +54,7 @@ const NEWS: NewsItem[] = [
     title: "Tren Konsumen 2026: Era Label "Kopi Regeneratif",
     date: "02 April 2026",
     image: "https://i.ibb.co.com/x8snJwB3/1776845764743.png",
-    category: "Tren"
+    category: "Tren",
     deskripsi: "Tahun 2026 menjadi titik balik munculnya label "Kopi Regeneratif" di rak-rak supermarket. ​Apa itu? Berbeda dengan label organik biasa, sertifikasi ini menjamin bahwa kopi diproduksi melalui metode yang aktif memperbaiki ekosistem tanah dan meningkatkan kesejahteraan petani secara signifikan."
   }
 ];
