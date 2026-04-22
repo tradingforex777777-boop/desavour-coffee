@@ -386,7 +386,7 @@ const News = () => {
   );
 };
 
-  const GallerySlider = () => {
+const GallerySlider = () => {
   return (
     <section id="gallery" className="py-24 bg-coffee-dark overflow-hidden text-coffee-cream border-y border-coffee-tan/5">
       <div className="max-w-7xl mx-auto px-6 mb-16 text-center">
