@@ -98,20 +98,20 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-      isScrolled ? 'bg-coffee-dark/80 backdrop-blur-md py-4 border-b border-coffee-tan/10 shadow-lg' : 'bg-transparent py-6'
+      isScrolled ? 'bg-coffee-dark/95 backdrop-blur-md py-3 md:py-4 border-b border-coffee-tan/10 shadow-lg' : 'bg-transparent py-4 md:py-6'
     }`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center text-coffee-cream">
         <div className="flex flex-col">
-          <span className={`text-[10px] uppercase tracking-[0.3em] text-coffee-tan mb-0.5 transition-opacity duration-300 ${isScrolled ? 'opacity-100' : 'opacity-0'}`}>Est. 2024 — Bekasi</span>
-          <div className="flex items-center gap-3">
+          <span className={`text-[8px] md:text-[10px] uppercase tracking-[0.3em] text-coffee-tan mb-0.5 transition-opacity duration-300 ${isScrolled ? 'opacity-100' : 'opacity-0'}`}>Est. 2024 — Bekasi</span>
+          <div className="flex items-center gap-2 md:gap-3">
             <img 
               src="https://iili.io/BSHHbMx.png" 
               alt="De' Savour Coffee Logo" 
-              className="h-10 w-auto object-contain"
+              className="h-8 md:h-10 w-auto object-contain"
               referrerPolicy="no-referrer"
             />
-            <span className="font-display font-bold text-xl tracking-tighter">
-              DE' SAVOUR COFFEE
+            <span className="font-display font-bold text-lg md:text-xl tracking-tighter">
+              DE' SAVOUR C4OFFEE
             </span>
           </div>
         </div>
@@ -144,10 +144,10 @@ const Navbar = () => {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div 
-            initial={{ opacity: 0, y: -20 }}
+            initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="md:hidden absolute top-full left-0 w-full glass flex flex-col items-center py-10 gap-6 font-display font-medium text-lg text-coffee-cream"
+            exit={{ opacity: 0, y: -10 }}
+            className="md:hidden absolute top-full left-0 w-full bg-coffee-dark/98 backdrop-blur-xl flex flex-col items-center py-8 gap-5 font-display font-medium text-lg text-coffee-cream border-t border-coffee-tan/10 shadow-2xl"
           >
             <a href="#about" onClick={() => setIsMobileMenuOpen(false)}>Tentang</a>
             <a href="#news" onClick={() => setIsMobileMenuOpen(false)}>Berita</a>
