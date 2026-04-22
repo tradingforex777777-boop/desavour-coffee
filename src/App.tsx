@@ -36,27 +36,27 @@ interface NewsItem {
 const NEWS: NewsItem[] = [
   {
     id: 1,
-    title: "Inovasi Teknologi AI untuk Kualitas Biji Kopi",
-    date: "15 Januari 2026",
-    image: "#",
-    category: "Teknologi",
-    description: "Kalau berencana melancong ke Sumatera Selatan, luangkan waktu untuk berkunjung ke SMKN 1 Jarai untuk melihat proses pengolahan kopi dengan AI. Kalau biasanya hanya minum kopi di kafe, di SMKN 1 Jarai Lahat, Sumatera Selatan, Anda bisa menyaksikan langsung bagaimana biji kopi dijemur dengan kecerdasan buatan. ​Di balik sejuknya lereng Bukit Barisan yang dikenal sebagai penghasil kopi robusta unggulan di Sumatera Selatan, kini hadir inovasi yang menyatukan teknologi mutakhir dan tradisi pertanian rakyat. Salah satunya adalah Smart Solar Dryer, alat penjemur kopi pintar berbasis AI dan IoT yang jadi daya tarik baru bagi wisatawan pencinta kopi.Biasanya, penjemuran kopi dilakukan di halaman rumah atau di pinggir jalan. Sayangnya, cara itu rentan kontaminasi debu, hujan, bahkan dilindas kendaraan. Kini, dengan adanya inovasi Smart Solar Dryer, wisatawan bisa melihat proses penjemuran kopi di dalam greenhouse kecil berukuran 3 x 3 meter yang sepenuhnya tertutup dan dikendalikan oleh sistem digital. Sumber https://www.tempo.co/gaya-hidup/menjemur-kopi-dengan-ai-di-lereng-bukit-barisan-1725454"
+    title: "Brewing Workshops: Mastering the V60",
+    date: "15 April 2024",
+    image: "https://images.unsplash.com/photo-1544787210-2213d84ad960?auto=format&fit=crop&q=80&w=800",
+    category: "Event",
+    description: "Pelajari teknik seduh presisi V60 bersama barista ahli kami. Sempurnakan ekstraksi kopi Anda di rumah."
   },
   {
     id: 2,
-    title: "Harga Kopi Mulai Stabil Setelah Guncangan Pasar Global",
-    date: "10 Januari 2026",
-    image: "#",
-    category: "Berita",
-    description: "Harga kopi global mulai menunjukkan tren pelemahan seiring meredanya gangguan pasokan akibat faktor geopolitik, sekaligus memunculkan kembali risiko kelebihan suplai yang berpotensi menekan harga dalam jangka menengah. Dilansir Barchart, harga kopi arabika kontrak Mei tercatat turun 2,41% pada Jumat, sementara robusta melemah 2,48%. Koreksi ini terjadi setelah Iran membuka kembali Selat Hormuz, sehingga meredakan kekhawatiran gangguan distribusi global dan menurunkan premi risiko pada harga komoditas. Pergerakan tersebut menegaskan bahwa faktor geopolitik masih menjadi pendorong volatilitas jangka pendek. Namun, tekanan yang lebih fundamental kini berasal dari sisi pasokan global yang mulai longgar. Ekspektasi panen besar dari Brasil menjadi faktor utama yang menekan harga. Proyeksi Marex Group memperkirakan produksi kopi Brasil musim 2026/2027 mencapai 75,9 juta karung, sementara StoneX memperkirakan 75,3 juta karung, keduanya mengindikasikan rekor baru produksi. Kondisi ini mendorong proyeksi surplus kopi global 2026 mencapai 10 juta karung, melonjak signifikan dari 1,8 juta karung pada 2025 dan menjadi yang terbesar dalam enam tahun terakhir. Sumber https://ekonomi.bisnis.com/read/20260420/12/1967785/harga-kopi-global-turun-sinyal-awal-surplus-pasokan-2026#goog_rewarded"
+    title: "Season's Special: Organic Gayo Beans",
+    date: "10 April 2024",
+    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=800",
+    category: "Product",
+    description: "Nikmati karakter rasa rempah dan coklat yang mendalam dari biji kopi Gayo organik pilihan musim ini."
   },
   {
     id: 3,
-    title: "Tren Konsumen 2026: Era Label Kopi Regeneratif",
-    date: "02 Januari 2024",
-    image: "#",
-    category: "Tren",
-    description: "MULAI tahun 2026, ngopi nggak lagi cuma soal rasa. Produk kopi di rak supermarket bakal punya label baru, Regeneratif. Label ini bukan sekadar tempelan, tapi penanda kalau kopi yang kamu beli berasal dari kebun yang berkomitmen menjaga bumi dan bikin hidup petaninya lebih sejahtera. Krisis iklim sudah bikin banyak kebun kopi megap-megap. Hujan tak menentu, suhu makin panas, panen jadi nggak pasti. Padahal, lebih dari 70 persen kopi dunia ditanam sama petani kecil. Kalau mereka kolaps, dunia bisa krisis kafein beneran. Rainforest Alliance, organisasi internasional yang concern sama keberlanjutan, akhirnya turun tangan. Mereka meluncurkan Standar Pertanian Regeneratif, semacam panduan plus sertifikasi baru buat petani kopi dan perusahaan. Biar pertanian kopi nggak cuma bertahan, tapi juga memulihkan ekosistem. Kalau selama ini kita sering dengar kopi fair trade atau organic, sekarang ada level lanjutannya, kopi regeneratif. Bedanya, model ini nggak cuma nggak merusak, tapi aktif memperbaiki. Misalnya, memperkaya tanah, menjaga air, melindungi keanekaragaman hayati, sampai bikin kebun lebih tahan sama cuaca ekstrem. Sumber https://mulamula.id/mulai-2026-ada-kopi-dengan-label-regeneratif-apa-artinya/"
+    title: "New Outdoor Space is Now Open!",
+    date: "02 April 2024",
+    image: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&q=80&w=800",
+    category: "Space",
+    description: "Ruang terbuka baru kami telah siap. Nikmati senja di Bekasi dengan suasana yang lebih santai dan asri."
   }
 ];
 
@@ -354,15 +354,15 @@ const News = () => {
               viewport={{ once: true }}
               className={`flex flex-col ${idx % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-10 items-center group`}
             >
-              <div className="w-fit md:w-1/2 aspect-[16/10] overflow-hidden rounded-sm border border-coffee-tan/10 shadow-2xl transition-all duration-700">
+              <div className="w-full md:w-1/2 aspect-[16/10] overflow-hidden rounded-sm border border-coffee-tan/10 shadow-2xl transition-all duration-700">
                 <img 
                   src={item.image} 
                   alt={item.title} 
-                  className="w-fit object-cover group-hover:scale-105 transition-transform duration-1000 grayscale-[30%] group-hover:grayscale-0" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 grayscale-[30%] group-hover:grayscale-0" 
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <div className="w-fit flex flex-col gap-4">
+              <div className="w-full md:w-1/2 flex flex-col gap-4">
                 <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-widest">
                   <span className="text-coffee-tan px-3 py-1 bg-coffee-tan/5 border border-coffee-tan/20 rounded-full">{item.category}</span>
                   <span className="opacity-40">{item.date}</span>
