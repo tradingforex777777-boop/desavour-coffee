@@ -35,24 +35,24 @@ interface NewsItem {
 const NEWS: NewsItem[] = [
   {
     id: 1,
-    title: "Brewing Workshops: Mastering the V60",
-    date: "15 April 2024",
-    image: "https://images.unsplash.com/photo-1544787210-2213d84ad960?auto=format&fit=crop&q=80&w=800",
-    category: "Event"
+    title: "Pasar Global: Harga Kopi Mulai Stabil Setelah "Guncangan",
+    date: "15 April 2026",
+    image: "https://i.ibb.co.com/PGP5FQzZ/1776845510155.png",
+    category: "harga kopi dunia (khususnya Arabika) mulai menunjukkan fase stabilisasi di kisaran Rp105.000 per kilogram. ​Penyebab Penurunan: Setelah sempat menembus angka rekor di akhir 2025, harga mulai terkoreksi karena proyeksi panen raya di Brasil yang diperkirakan mencapai 75 juta karung."
   },
   {
     id: 2,
-    title: "Season's Special: Organic Gayo Beans",
-    date: "10 April 2024",
-    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=800",
-    category: "Product"
+    title: "Inovasi: Teknologi AI untuk Kualitas Biji Kopi",
+    date: "10 April 2026",
+    image: "https://i.ibb.co.com/LMp20s6/1776845110713.png",
+    category: "Tim peneliti dari Universitas Gadjah Mada (UGM) baru saja meluncurkan metode pemilahan biji kopi berbasis Artificial Intelligence (AI). Teknologi ini mampu memilah biji kopi "lanang" (peaberry) berkualitas tinggi hanya dalam hitungan detik. Inovasi ini diharapkan dapat meningkatkan nilai jual kopi petani lokal di pasar internasional."
   },
   {
     id: 3,
-    title: "New Outdoor Space is Now Open!",
-    date: "02 April 2024",
-    image: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&q=80&w=800",
-    category: "Space"
+    title: "Tren Konsumen 2026: Era Label "Kopi Regeneratif",
+    date: "02 April 2026",
+    image: "https://i.ibb.co.com/x8snJwB3/1776845764743.png",
+    category: "Tahun 2026 menjadi titik balik munculnya label "Kopi Regeneratif" di rak-rak supermarket. ​Apa itu? Berbeda dengan label organik biasa, sertifikasi ini menjamin bahwa kopi diproduksi melalui metode yang aktif memperbaiki ekosistem tanah dan meningkatkan kesejahteraan petani secara signifikan."
   }
 ];
 
