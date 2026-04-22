@@ -569,8 +569,7 @@ export default function App() {
         <About />
         <Quote />
         <Description />        
-        <GallerySlider />
-        <News />
+        <GallerySlider />        
         <Contact />
       </div>
       <Footer />
