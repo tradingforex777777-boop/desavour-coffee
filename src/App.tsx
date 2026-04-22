@@ -304,6 +304,9 @@ const Quote = () => (
         <p className="font-serif italic text-3xl md:text-5xl leading-tight mb-8">
           "Kopi terbaik adalah yang dinikmati perlahan, saat waktu terasa berhenti sejenak."
         </p>
+        <p className="font-serif italic text-3xl md:text-5xl leading-tight mb-8">
+          "De' Savour Coffee."
+        </p>
         <div className="w-12 h-[1px] bg-coffee-tan/30 mx-auto" />
       </motion.div>
     </div>
