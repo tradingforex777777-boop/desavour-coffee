@@ -567,6 +567,9 @@ const Footer = () => (
           <a href="https://www.instagram.com/de_savour_coffee/" className="w-10 h-10 rounded-sm border border-coffee-tan/20 flex items-center justify-center hover:bg-coffee-tan hover:text-black transition-all duration-500">
             <Instagram size={18} />
           </a>
+          <a href="https://www.facebook.com/desavourcoffee" className="w-10 h-10 rounded-sm border border-coffee-tan/20 flex items-center justify-center hover:bg-coffee-tan hover:text-black transition-all duration-500">
+            <Facebook size={18} />
+          </a>
           <a href="https://www.tiktok.com/@de_savour_coffee/" className="w-10 h-10 rounded-sm border border-coffee-tan/20 flex items-center justify-center hover:bg-coffee-tan hover:text-black transition-all duration-500">
             <img 
               src="https://i.ibb.co.com/j9T0GLG1/tik-tok.png"
@@ -578,8 +581,6 @@ const Footer = () => (
       <div className="pt-10 flex flex-col md:flex-row justify-between items-center gap-6 text-[9px] opacity-30 font-sans uppercase tracking-[0.4em] font-semibold">
         <p>&copy; 2026 DE' SAVOUR COFFEE COMPANY. ALL RIGHTS RESERVED.</p>
         <div className="flex gap-10">
-          <a href="#" className="hover:text-coffee-tan transition-colors">Privacy</a>
-          <a href="#" className="hover:text-coffee-tan transition-colors">Terms</a>
         </div>
       </div>
     </div>
