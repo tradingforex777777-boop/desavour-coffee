@@ -60,10 +60,6 @@ const NEWS: NewsItem[] = [
   }
 ];
 
-<a href="https://ibb.co.com/qz1PD29"><img src="https://i.ibb.co.com/LMp20s6/1776845110713.png" alt="1776845110713" border="0"></a>
-<a href="https://ibb.co.com/GQ8VnT3v"><img src="https://i.ibb.co.com/PGP5FQzZ/1776845510155.png" alt="1776845510155" border="0"></a>
-<a href="https://ibb.co.com/G3JZcG8F"><img src="https://i.ibb.co.com/x8snJwB3/1776845764743.png" alt="1776845764743" border="0"></a>
-
 const HERO_IMAGES = [
   "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=1920",
   "https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=80&w=1920",
