@@ -149,9 +149,9 @@ const Navbar = () => {
               exit={{ opacity: 0, y: -10 }}
               className="absolute top-full left-0 w-full bg-coffee-dark border-b border-coffee-tan/10 flex flex-col items-center py-10 gap-6 md:hidden z-50"
             >
-              <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Tentang</a>
-              <a href="#news" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Berita</a>
+              <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Tentang</a>              
               <a href="#gallery" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Galeri</a>
+              <a href="#news" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Berita</a>
               <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Kontak</a>              
             </motion.div>
           )}
