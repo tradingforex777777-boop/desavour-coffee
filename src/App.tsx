@@ -350,7 +350,7 @@ const News = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-center mb-16 px-2">
           <div>
-            <span className="text-[10px] uppercase tracking-[0.4em] text-coffee-tan mb-2 block font-bold opacity-70">Warta Terkini</span>
+            <span className="text-xs uppercase tracking-widest text-coffee-tan mb-4 block font-semibold">Warta Terkini</span>
             <h2 className="font-display font-bold text-4xl md:text-5xl uppercase tracking-tighter">
               Jurnal <span className="italic font-normal">Kopi</span>
             </h2>
