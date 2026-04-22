@@ -38,7 +38,7 @@ const NEWS: NewsItem[] = [
     id: 1,
     title: "Brewing Workshops: Mastering the V60",
     date: "15 April 2024",
-    image: "https://i.ibb.co.com/LMp20s6/1776845110713.png",
+    image: "https://i.ibb.co.com/Zp4RR6dm/1776845110713.png",
     category: "Event",
     description: "Pelajari teknik seduh presisi V60 bersama barista ahli kami. Sempurnakan ekstraksi kopi Anda di rumah."
   },
@@ -46,7 +46,7 @@ const NEWS: NewsItem[] = [
     id: 2,
     title: "Season's Special: Organic Gayo Beans",
     date: "10 April 2024",
-    image: "https://i.ibb.co.com/PGP5FQzZ/1776845510155.png",
+    image: "https://i.ibb.co.com/60VcHTwC/1776845510155.png",
     category: "Product",
     description: "Nikmati karakter rasa rempah dan coklat yang mendalam dari biji kopi Gayo organik pilihan musim ini."
   },
@@ -54,7 +54,7 @@ const NEWS: NewsItem[] = [
     id: 3,
     title: "New Outdoor Space is Now Open!",
     date: "02 April 2024",
-    image: "https://i.ibb.co.com/x8snJwB3/1776845764743.png",
+    image: "https://i.ibb.co.com/gMfmWZPS/1776845764743.png",
     category: "Space",
     description: "Ruang terbuka baru kami telah siap. Nikmati senja di Bekasi dengan suasana yang lebih santai dan asri."
   }
