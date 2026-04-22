@@ -132,6 +132,14 @@ const Navbar = () => {
           <a href="#contact" className="hover:text-coffee-tan transition-colors">Kontak</a>          
         </div>
         
+        {/* Mobile Menu Button icon */}
+        <button 
+          className="md:hidden text-coffee-cream" 
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+        
         {/* Simplified Mobile Menu Dropdown */}
         <AnimatePresence>
           {isMobileMenuOpen && (
