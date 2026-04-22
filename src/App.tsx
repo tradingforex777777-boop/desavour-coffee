@@ -21,6 +21,7 @@ import {
   ChevronRight,
   Clock
 } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 // --- Types & Data ---
 
@@ -601,6 +602,7 @@ export default function App() {
         <Contact />
       </div>
       <Footer />
+      <Analytics />
     </main>
   );
 }
