@@ -40,7 +40,7 @@ const NEWS: NewsItem[] = [
     date: "15 Januari 2026",
     image: "https://i.ibb.co.com/LMp20s6/1776845110713.png",
     category: "Teknologi",
-    description: "​Tim peneliti dari Universitas Gadjah Mada baru saja meluncurkan metode pemilahan biji kopi berbasis Artificial Intelligence. Teknologi ini mampu memilah biji kopi lanang peaberry berkualitas tinggi hanya dalam hitungan detik. Inovasi ini diharapkan dapat meningkatkan nilai jual kopi petani lokal di pasar internasional."
+    description: "​Di balik sejuknya lereng Bukit Barisan yang dikenal sebagai penghasil kopi robusta unggulan di Sumatera Selatan, kini hadir inovasi yang menyatukan teknologi mutakhir dan tradisi pertanian rakyat. Salah satunya adalah Smart Solar Dryer, alat penjemur kopi pintar berbasis AI dan IoT yang jadi daya tarik baru bagi wisatawan pencinta kopi.Dikembangkan oleh tim dari Politeknik Negeri Sriwijaya melalui Program Katalis Kemitraan Berdikari yang didanai LPDP, alat ini dirancang oleh Ade Silvia Handayani, dosen elektro yang juga aktif menggandeng sekolah kejuruan di wilayah Jarai."
   },
   {
     id: 2,
