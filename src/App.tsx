@@ -112,7 +112,7 @@ const Navbar = () => {
       isScrolled ? 'bg-coffee-dark/95 backdrop-blur-md border-b border-coffee-tan/10 shadow-lg py-4' : 'bg-transparent py-6'
     }`}>
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-        <a href="#home" className="flex items-center gap-3">
+        <a href="#" className="flex items-center gap-3">
           <img 
             src="https://iili.io/BSHHbMx.png" 
             alt="De' Savour Coffee Logo" 
@@ -126,7 +126,7 @@ const Navbar = () => {
         
         {/* Simple Desktop Nav */}
         <div className="hidden md:flex items-center gap-10 text-[11px] font-bold uppercase tracking-[0.2em] text-coffee-cream/80">
-          <a href="#home" className="hover:text-coffee-tan transition-colors">Home</a>
+          <a href="#" className="hover:text-coffee-tan transition-colors">Home</a>
           <a href="#about" className="hover:text-coffee-tan transition-colors">Tentang</a>          
           <a href="#gallery" className="hover:text-coffee-tan transition-colors">Galeri</a>
           <a href="#news" className="hover:text-coffee-tan transition-colors">Berita</a>
