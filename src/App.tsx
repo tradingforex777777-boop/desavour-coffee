@@ -130,7 +130,10 @@ const Navbar = () => {
           <a href="#about" className="hover:text-coffee-tan transition-colors">Tentang</a>          
           <a href="#gallery" className="hover:text-coffee-tan transition-colors">Galeri</a>
           <a href="#news" className="hover:text-coffee-tan transition-colors">Berita</a>
-          <a href="#contact" className="hover:text-coffee-tan transition-colors">Kontak</a>          
+          <a href="#contact" className="hover:text-coffee-tan transition-colors">Kontak</a>
+          <button className="hidden lg:block border border-coffee-tan/30 px-6 py-2 rounded-sm hover:bg-coffee-tan hover:text-black transition-all">
+            Menu
+          </button>
         </div>
         
         {/* Mobile Menu Button icon */}
