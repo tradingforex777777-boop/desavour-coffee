@@ -124,8 +124,8 @@ const Navbar = () => {
           </span>
         </a>
         
-        {/* Simple Desktop Nav */}
-        <div className="hidden md:flex items-center gap-10 text-[11px] font-bold uppercase tracking-[0.2em] text-coffee-cream/80">
+        {/* Simple Tablet & Desktop Nav */}
+        <div className="hidden sm:flex items-center gap-6 lg:gap-10 text-[11px] font-bold uppercase tracking-[0.2em] text-coffee-cream/80">
           <a href="#" className="hover:text-coffee-tan transition-colors">Home</a>
           <a href="#about" className="hover:text-coffee-tan transition-colors">Tentang</a>          
           <a href="#gallery" className="hover:text-coffee-tan transition-colors">Galeri</a>
