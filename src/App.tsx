@@ -112,7 +112,7 @@ const Navbar = () => {
       isScrolled ? 'bg-coffee-dark/95 backdrop-blur-md border-b border-coffee-tan/10 shadow-lg py-4' : 'bg-transparent py-6'
     }`}>
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-        <a href="#" className="flex items-center gap-3">
+        <a href="home" className="flex items-center gap-3">
           <img 
             src="https://iili.io/BSHHbMx.png" 
             alt="De' Savour Coffee Logo" 
@@ -126,10 +126,11 @@ const Navbar = () => {
         
         {/* Simple Desktop Nav */}
         <div className="hidden md:flex items-center gap-10 text-[11px] font-bold uppercase tracking-[0.2em] text-coffee-cream/80">
-          <a href="#about" className="hover:text-coffee-tan transition-colors">Tentang</a>          
-          <a href="#gallery" className="hover:text-coffee-tan transition-colors">Galeri</a>
-          <a href="#news" className="hover:text-coffee-tan transition-colors">Berita</a>
-          <a href="#contact" className="hover:text-coffee-tan transition-colors">Kontak</a>          
+          <a href="home" className="hover:text-coffee-tan transition-colors">Home</a>
+          <a href="about" className="hover:text-coffee-tan transition-colors">Tentang</a>          
+          <a href="gallery" className="hover:text-coffee-tan transition-colors">Galeri</a>
+          <a href="news" className="hover:text-coffee-tan transition-colors">Berita</a>
+          <a href="contact" className="hover:text-coffee-tan transition-colors">Kontak</a>          
         </div>
         
         {/* Mobile Menu Button icon */}
@@ -149,10 +150,11 @@ const Navbar = () => {
               exit={{ opacity: 0, y: -10 }}
               className="absolute top-full left-0 w-full bg-coffee-dark border-b border-coffee-tan/10 flex flex-col items-center py-10 gap-6 md:hidden z-50"
             >
-              <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Tentang</a>              
-              <a href="#gallery" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Galeri</a>
-              <a href="#news" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Berita</a>
-              <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Kontak</a>              
+              <a href="home" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Home</a>
+              <a href="about" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Tentang</a>              
+              <a href="gallery" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Galeri</a>
+              <a href="news" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Berita</a>
+              <a href="contact" onClick={() => setIsMobileMenuOpen(false)} className="text-coffee-cream hover:text-coffee-tan transition-colors uppercase tracking-widest text-sm font-bold">Kontak</a>              
             </motion.div>
           )}
         </AnimatePresence>
@@ -208,10 +210,10 @@ const Hero = () => {
             "Unleash Your Time"
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#about" className="bg-coffee-tan text-black px-10 py-3 rounded-sm font-sans font-bold uppercase tracking-widest hover:bg-coffee-cream transition-all duration-500 inline-block text-sm">
+            <a href="about" className="bg-coffee-tan text-black px-10 py-3 rounded-sm font-sans font-bold uppercase tracking-widest hover:bg-coffee-cream transition-all duration-500 inline-block text-sm">
               Selengkapnya
             </a>
-            <a href="#contact" className="bg-transparent border border-coffee-tan/40 text-coffee-cream px-10 py-3 rounded-sm font-sans font-bold uppercase tracking-widest hover:border-coffee-tan transition-all duration-500 inline-block text-sm">
+            <a href="contact" className="bg-transparent border border-coffee-tan/40 text-coffee-cream px-10 py-3 rounded-sm font-sans font-bold uppercase tracking-widest hover:border-coffee-tan transition-all duration-500 inline-block text-sm">
               Hubungi Kami
             </a>
           </div>
