@@ -5,6 +5,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { 
   Coffee, 
   MapPin, 
