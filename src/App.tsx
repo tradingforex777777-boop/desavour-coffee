@@ -5,7 +5,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import { 
   Coffee, 
   MapPin, 
@@ -604,6 +604,7 @@ export default function App() {
         <Contact />
       </div>
       <Footer />
+      <SpeedInsights />
     </main>
   );
 }
